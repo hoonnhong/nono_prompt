@@ -1,3 +1,8 @@
+/**
+ * @file conceptAndIllustration.ts
+ * @description '콘셉트 & 일러스트' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
+ */
+
 import type { Case } from '../../types';
 
 export const conceptAndIllustrationCases: Case[] = [
@@ -46,7 +51,6 @@ export const conceptAndIllustrationCases: Case[] = [
     prompt_ko: '첫 번째 이미지의 캐릭터와 두 번째 이미지의 장면 구성을 사용하여 만화 구도를 생성해주세요.'
   },
   {
-// FIX: Changed duplicate ID from 86 to 85 to avoid key conflicts.
     id: 85,
     title: '이중 노출',
     category: '콘셉트 & 일러스트',
@@ -66,7 +70,6 @@ export const conceptAndIllustrationCases: Case[] = [
     inputImages: [],
     outputImage: '/images/cases/111/example_vintage_poster.png',
     prompt: 'A retro-style promotional poster emphasizing bold Chinese text. The background features a red-and-yellow radial burst pattern. In the center of the composition is a beautiful young woman illustrated in a refined vintage art style—she smiles warmly with a graceful, approachable presence. The poster advertises GPT’s latest AI image generation service with key slogans in Chinese, such as: “Shocking price: 9.9 per image”, “Supports all scenes, image blending, partial redrawing”, “3 revisions per image”, and “Direct AI output with no need for manual edits”. At the bottom, prominently display the call-to-action: “If you’re interested, click ‘I want this’ in the bottom-right corner”. Illustrate a hand pressing a button in the bottom-right, and place the OpenAI logo in the bottom-left.',
-// FIX: Escaped single quotes inside the string to prevent a syntax error.
     prompt_ko: '굵은 중국어 텍스트를 강조하는 복고풍 홍보 포스터. 배경은 빨간색과 노란색의 방사형 폭발 패턴을 특징으로 합니다. 구성 중앙에는 세련된 빈티지 아트 스타일로 그려진 아름다운 젊은 여성이 있습니다. 그녀는 우아하고 친근한 모습으로 따뜻하게 미소 짓고 있습니다. 포스터는 "충격적인 가격: 이미지당 9.9", "모든 장면 지원, 이미지 혼합, 부분 재작업", "이미지당 3회 수정", "수동 편집 없이 직접 AI 출력"과 같은 중국어 핵심 슬로건으로 GPT의 최신 AI 이미지 생성 서비스를 광고합니다. 하단에는 "관심 있으시면 오른쪽 하단의 \'이거 주세요\'를 클릭하세요"라는 행동 유도 문구를 눈에 띄게 표시합니다. 오른쪽 하단에 버튼을 누르는 손을 그리고, 왼쪽 하단에 OpenAI 로고를 배치합니다.'
   },
   {

@@ -1,3 +1,9 @@
+/**
+ * @file photoEditing.ts
+ * @description '사진 편집 & 복원' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
+ *              기존 사진을 수정, 개선, 복원하는 사례를 포함합니다.
+ */
+
 import type { Case } from '../../types';
 
 export const photoEditingAndRestorationCases: Case[] = [

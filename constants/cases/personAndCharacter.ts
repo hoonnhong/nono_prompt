@@ -1,3 +1,9 @@
+/**
+ * @file personAndCharacter.ts
+ * @description '인물 & 캐릭터' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
+ *              사람이나 캐릭터 생성, 변형, 스타일링 관련 사례를 포함합니다.
+ */
+
 import type { Case } from '../../types';
 
 export const personAndCharacterCases: Case[] = [

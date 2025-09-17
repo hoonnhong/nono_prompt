@@ -1,3 +1,7 @@
+/**
+ * @file UploadIcon.tsx
+ * @description 업로드 행위를 나타내는 SVG 아이콘을 React 컴포넌트로 만든 것입니다.
+ */
 
 import React from 'react';
 

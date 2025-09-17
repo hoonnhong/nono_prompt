@@ -1,3 +1,9 @@
+/**
+ * @file design.ts
+ * @description '디자인 & 브랜딩' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
+ *              로고, 포스터, UI 등 디자인 관련 생성 사례를 포함합니다.
+ */
+
 import type { Case } from '../../types';
 
 export const designAndBrandingCases: Case[] = [

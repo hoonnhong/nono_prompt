@@ -1,3 +1,9 @@
+/**
+ * @file styleTransfer.ts
+ * @description '스타일 변환' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
+ *              이미지의 스타일을 다른 스타일로 변환하는 사례를 포함합니다.
+ */
+
 import type { Case } from '../../types';
 
 export const styleTransferCases: Case[] = [

@@ -1,3 +1,9 @@
+/**
+ * @file informationVisualization.ts
+ * @description '정보 시각화' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
+ *              데이터나 정보를 시각적으로 표현하는 사례를 포함합니다.
+ */
+
 import type { Case } from '../../types';
 
 export const informationVisualizationCases: Case[] = [

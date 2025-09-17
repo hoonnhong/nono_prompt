@@ -1,3 +1,9 @@
+/**
+ * @file productsAndMockups.ts
+ * @description '제품 & 목업' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
+ *              실제 제품이나 가상의 목업을 생성하는 사례를 포함합니다.
+ */
+
 import type { Case } from '../../types';
 
 export const productsAndMockupsCases: Case[] = [

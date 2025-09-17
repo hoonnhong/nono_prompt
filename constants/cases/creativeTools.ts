@@ -1,3 +1,9 @@
+/**
+ * @file creativeTools.ts
+ * @description '창의적 도구' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
+ *              이미지를 변형하거나 특정 도구처럼 사용하는 창의적인 활용 사례를 포함합니다.
+ */
+
 import type { Case } from '../../types';
 
 export const creativeToolsCases: Case[] = [
