@@ -1,0 +1,5 @@
+{
+  "name": "Nano-banana Image Gallery",
+  "description": "An interactive gallery showcasing the image generation and editing capabilities of Google's Nano-banana model. Users can explore curated examples, view prompts, and experiment with their own images and ideas in a creative playground.",
+  "requestFramePermissions": []
+}
