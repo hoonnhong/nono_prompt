@@ -14,6 +14,7 @@ import { creativeToolsCases } from './creativeTools';
 import { conceptAndIllustrationCases } from './conceptAndIllustration';
 import { productsAndMockupsCases } from './productsAndMockups';
 import { informationVisualizationCases } from './informationVisualization';
+import { caricatureCases } from './caricature';
 
 // 각 카테고리 이름을 키(key)로, 해당 카테고리의 데이터 배열을 값(value)으로 갖는 객체를 생성합니다.
 export const categorizedCases = {
@@ -22,6 +23,7 @@ export const categorizedCases = {
   '3D & 아이소메트릭': threeDAndIsometricCases,
   '디자인 & 브랜딩': designAndBrandingCases,
   '스타일 변환': styleTransferCases,
+  '캐리커쳐': caricatureCases,
   '창의적 도구': creativeToolsCases,
   '콘셉트 & 일러스트': conceptAndIllustrationCases,
   '제품 & 목업': productsAndMockupsCases,

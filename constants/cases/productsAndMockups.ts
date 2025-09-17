@@ -1,9 +1,7 @@
 /**
  * @file productsAndMockups.ts
- * @description '제품 & 목업' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
- *              실제 제품이나 가상의 목업을 생성하는 사례를 포함합니다.
+ * @description '제품 & 목업' 카테고리에 대한 예제 케이스 데이터입니다.
  */
-
 import type { Case } from '../../types';
 
 export const productsAndMockupsCases: Case[] = [
@@ -13,32 +11,21 @@ export const productsAndMockupsCases: Case[] = [
     category: '제품 & 목업',
     author: '@icreatelife',
     sourceUrl: 'https://x.com/icreatelife/status/1961653618529935720',
-    inputImages: ['/images/cases/32/input.jpg'],
-    outputImage: '/images/cases/32/output.jpg',
-    prompt: 'make an action figure of me that says “AI Evangelist - Kris” and features [coffee, turtle, laptop, phone and headphones]',
-    prompt_ko: '나를 "AI Evangelist - Kris"라고 쓰여 있고 [커피, 거북이, 노트북, 휴대폰, 헤드폰]이 특징인 액션 피규어로 만들어주세요.'
+    inputImages: ['https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case32/input.jpg'],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case32/output.jpg',
+    prompt: 'make an action figure of me that says [“AI Evangelist - Kris”] and features [coffee, turtle, laptop, phone and headphones]',
+    prompt_ko: '[“AI Evangelist - Kris”]라고 쓰여 있고 [커피, 거북이, 노트북, 휴대폰, 헤드폰]이 특징인 제 액션 피규어를 만들어 주세요.'
   },
   {
     id: 41,
-    title: '제품 패키지 생성',
+    title: '제품 포장 생성',
     category: '제품 & 목업',
     author: '@ZHO_ZHO_ZHO',
     sourceUrl: 'https://x.com/ZHO_ZHO_ZHO/status/1962763864875167971',
-    inputImages: ['/images/cases/41/input1.jpg', '/images/cases/41/input2.jpg'],
-    outputImage: '/images/cases/41/case.jpg',
+    inputImages: ['https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case41/case.jpg'],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case41/case.jpg',
     prompt: 'Apply the design from Image 1 to the can in Image 2, and place it in a minimalist design setting, professional photography',
-    prompt_ko: '이미지 1의 디자인을 이미지 2의 캔에 적용하고, 미니멀리스트 디자인 배경에 전문적인 사진 촬영으로 배치해주세요.'
-  },
-  {
-    id: 45,
-    title: '레고 미니피규어',
-    category: '제품 & 목업',
-    author: '@ZHO_ZHO_ZHO',
-    sourceUrl: 'https://x.com/ZHO_ZHO_ZHO/status/1961395526198595771',
-    inputImages: ['/images/cases/45/input.jpg'],
-    outputImage: '/images/cases/45/output.jpg',
-    prompt: 'Transform the person in the photo into a LEGO minifigure packaging box style, presented in isometric perspective. Label the box with the title "ZHOGUE". Inside the box, display the LEGO minifigure based on the person in the photo, along with their essential items (such as makeup, bags, or other items) as LEGO accessories. Beside the box, also display the actual LEGO minifigure itself, unpackaged, rendered in a realistic and vivid style.',
-    prompt_ko: '사진 속 인물을 레고 미니피규어 포장 상자 스타일로 변환하여 아이소메트릭 관점으로 제시해주세요. 상자에는 "ZHOGUE"라는 제목을 붙여주세요. 상자 안에는 사진 속 인물을 기반으로 한 레고 미니피규어와 함께 그들의 필수품(화장품, 가방 등)을 레고 액세서리로 전시해주세요. 상자 옆에는 포장되지 않은 실제 레고 미니피규어도 사실적이고 생생한 스타일로 렌더링하여 전시해주세요.'
+    prompt_ko: '이미지 1의 디자인을 이미지 2의 캔에 적용하고, 미니멀한 디자인 배경에 전문적인 사진처럼 배치해주세요.'
   },
   {
     id: 46,
@@ -46,10 +33,10 @@ export const productsAndMockupsCases: Case[] = [
     category: '제품 & 목업',
     author: '@ZHO_ZHO_ZHO',
     sourceUrl: 'https://x.com/ZHO_ZHO_ZHO/status/1961412823340265509',
-    inputImages: ['/images/cases/46/input.jpg'],
-    outputImage: '/images/cases/46/output.jpg',
+    inputImages: ['https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case46/input.jpg'],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case46/output.jpg',
     prompt: 'Transform the person in the photo into a Gundam model kit packaging box style, presented in isometric perspective. Label the box with the title "ZHOGUE". Inside the box, display a Gundam-style mechanical version of the person from the photo, along with their essentials (such as makeup, bags, or other items) redesigned as futuristic mechanical accessories. The packaging should resemble real Gunpla boxes, including technical illustrations, instruction manual-style details, and sci-fi fonts. Beside the box, also display the actual Gundam-style mechanical figure itself, outside the packaging, rendered in a realistic and lifelike style, similar to official Bandai promotional renders.',
-    prompt_ko: '사진 속 인물을 건담 모델 키트 포장 상자 스타일로 변환하여 아이소메트릭 관점으로 제시해주세요. 상자에는 "ZHOGUE"라는 제목을 붙여주세요. 상자 안에는 사진 속 인물의 건담 스타일 기계 버전을 전시하고, 그들의 필수품(화장품, 가방 등)은 미래형 기계 액세서리로 재설계하여 함께 전시해주세요. 포장은 기술 일러스트, 사용 설명서 스타일의 세부 사항, 공상 과학 글꼴을 포함하여 실제 건프라 상자와 유사해야 합니다. 상자 옆에는 포장되지 않은 실제 건담 스타일 기계 피규어도 공식 반다이 프로모션 렌더와 유사한 사실적이고 생생한 스타일로 렌더링하여 전시해주세요.'
+    prompt_ko: '사진 속 인물을 건담 모델 키트 포장 상자 스타일로 변환하여 아이소메트릭 뷰로 보여주세요. 상자에는 "ZHOGUE"라는 제목을 붙여주세요. 상자 안에는 사진 속 인물의 건담 스타일 기계 버전과 함께, 그들의 필수품(화장품, 가방 등)을 미래적인 기계 액세서리로 재디자인하여 전시해주세요. 포장은 기술 일러스트, 사용 설명서 스타일의 디테일, 공상 과학 폰트를 포함하여 실제 건프라 상자와 유사해야 합니다. 상자 옆에는 포장되지 않은 실제 건담 스타일 기계 피규어도 공식 반다이 프로모션 렌더링과 유사하게 사실적이고 생생한 스타일로 렌더링하여 보여주세요.'
   },
   {
     id: 53,
@@ -58,20 +45,20 @@ export const productsAndMockupsCases: Case[] = [
     author: '@azed_ai',
     sourceUrl: 'https://x.com/azed_ai/status/1962878353784066342',
     inputImages: [],
-    outputImage: '/images/cases/53/output.jpg',
-    prompt: 'A high-resolution advertising photograph of a realistic, miniature [PRODUCT] held delicately between a person\'s thumb and index finger. clean and white background, studio lighting, soft shadows. The hand is well-groomed, natural skin tone, and positioned to highlight the product’s shape and details. The product appears extremely small but hyper-detailed and brand-accurate, centered in the frame with a shallow depth of field. Emulates luxury product photography and minimalist commercial style.',
-    prompt_ko: '사람의 엄지와 검지 사이에 섬세하게 들려 있는 사실적인 미니어처 [제품]의 고해상도 광고 사진. 깨끗하고 흰 배경, 스튜디오 조명, 부드러운 그림자. 손은 잘 관리되어 있고 자연스러운 피부 톤이며, 제품의 모양과 디테일을 강조하는 위치에 있습니다. 제품은 매우 작아 보이지만 초정밀하고 브랜드에 정확하며, 얕은 피사계 심도로 프레임 중앙에 위치합니다. 고급 제품 사진 및 미니멀리스트 상업 스타일을 모방합니다.'
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case53/output.jpg',
+    prompt: 'A high-resolution advertising photograph of a realistic, miniature [PRODUCT] held delicately between a person\'s thumb and index finger.  clean and white background, studio lighting, soft shadows. The hand is well-groomed, natural skin tone, and positioned to highlight the product’s shape and details. The product appears extremely small but hyper-detailed and brand-accurate, centered in the frame with a shallow depth of field. Emulates luxury product photography and minimalist commercial style.',
+    prompt_ko: '사람의 엄지와 검지 사이에 섬세하게 들려 있는 사실적인 미니어처 [제품]의 고해상도 광고 사진. 깨끗하고 흰색 배경, 스튜디오 조명, 부드러운 그림자. 손은 잘 관리되어 있고 자연스러운 피부 톤이며 제품의 모양과 디테일을 강조하도록 위치해 있습니다. 제품은 매우 작지만 초정밀하고 브랜드와 정확하며, 얕은 피사계 심도로 프레임 중앙에 위치합니다. 고급 제품 사진과 미니멀한 상업 스타일을 모방합니다.'
   },
   {
-    id: 65,
-    title: '체스 세트 디자인',
+    id: 64,
+    title: '장면 A6 접이식 카드',
     category: '제품 & 목업',
     author: '@Gdgtify',
-    sourceUrl: 'https://x.com/Gdgtify/status/1964679042994442454',
-    inputImages: ['/images/cases/65/input.jpg'],
-    outputImage: '/images/cases/65/case.jpg',
-    prompt: 'Draw a chessboard and a set of 3D-printable chess pieces inspired by this image.',
-    prompt_ko: '이 이미지에서 영감을 받아 체스판과 3D 프린팅 가능한 체스 말을 그려주세요.'
+    sourceUrl: 'https://x.com/Gdgtify/status/19649795223709287319',
+    inputImages: ['https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case64/input.jpg'],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case64/output.jpg',
+    prompt: 'Draw an A6 folding card: when opened, it reveals a complete 3D spherical tiny house with a miniature paper garden and a bonsai tree inside.',
+    prompt_ko: 'A6 접이식 카드를 그려주세요: 펼치면 내부에 미니어처 종이 정원과 분재 나무가 있는 완전한 3D 구형의 작은 집이 나타납니다.'
   },
   {
     id: 67,
@@ -79,8 +66,8 @@ export const productsAndMockupsCases: Case[] = [
     category: '제품 & 목업',
     author: '@Gdgtify',
     sourceUrl: 'https://x.com/Gdgtify/status/1964419331342909777',
-    inputImages: ['/images/cases/67/input.jpg'],
-    outputImage: '/images/cases/67/output.jpg',
+    inputImages: ['https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case67/input.jpg'],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case67/output.jpg',
     prompt: 'Transform this image into a 5-piece jewelry collection.',
     prompt_ko: '이 이미지를 5피스 주얼리 컬렉션으로 변환해주세요.'
   },
@@ -90,8 +77,8 @@ export const productsAndMockupsCases: Case[] = [
     category: '제품 & 목업',
     author: '@0xFramer',
     sourceUrl: 'https://x.com/0xFramer/status/1964992117324886349',
-    inputImages: ['/images/cases/68/input.jpg'],
-    outputImage: '/images/cases/68/output.jpg',
+    inputImages: ['https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case68/input.jpg'],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case68/output.jpg',
     prompt: 'Create merchandise using this character image.',
     prompt_ko: '이 캐릭터 이미지를 사용하여 상품을 만들어주세요.'
   },
@@ -101,10 +88,10 @@ export const productsAndMockupsCases: Case[] = [
     category: '제품 & 목업',
     author: '@tokyo_Valentine',
     sourceUrl: 'https://x.com/tokyo_Valentine/status/1966888938838298727',
-    inputImages: ['/images/cases/82/input.png'],
-    outputImage: '/images/cases/82/output.png',
-    prompt: 'Remove the background from this illustration and turn it into merchandise like figurines. Image: Photorealistic. Location: The shelves of a fictional convenience store that doesn\'t exist in Japan. The cute, pop atmosphere is complemented by neatly arranged merchandise featuring the illustration. The store\'s interior is dreamily bright and special, creating a special space that excites fans. Characters: These merchandise are displayed on the shelves. Merchandise Lineup: Two large, approximately 50cm-long figures in the center of the screen (for a striking display). Acrylic stands (deformed versions of the original artwork). Chibi figures (deformed versions of the original artwork). Dakimakura pillows (large prints for a striking presence). Jigsaw puzzles (visual art of the characters). Stationery (notebooks, pens, clear files, etc., deformed versions of the original artwork). Cardboards (deformed versions of the original artwork). Plush toys (deformed versions of the original artwork). Display: The merchandise are neatly arranged on the shelves, maintaining the atmosphere of a convenience store while still filling the space with love for the characters. They\'re arranged in a way that teenage female fans can\'t help but want to pick them up. Overall tone: A dreamlike merchandise sales space. Cuteness and pop are at the forefront, and despite being a convenience store, it\'s presented as a "holy land for fan activities." Resolution: 4K, 4000px: 3000px',
-    prompt_ko: '이 일러스트의 배경을 제거하고 피규어 같은 상품으로 만들어 주세요. 이미지: 포토리얼리스틱. 장소: 일본에 존재하지 않는 가상의 편의점 선반. 귀엽고 팝적인 분위기는 일러스트가 그려진 상품들이 깔끔하게 진열되어 보완됩니다. 가게 내부는 꿈결처럼 밝고 특별하며, 팬들을 설레게 하는 특별한 공간을 만듭니다. 캐릭터: 이 상품들은 선반에 진열되어 있습니다. 상품 라인업: 화면 중앙에 약 50cm 길이의 큰 피규어 두 개 (눈에 띄는 전시용). 아크릴 스탠드 (원본 아트워크의 변형 버전). 치비 피규어 (원본 아트워크의 변형 버전). 다키마쿠라 베개 (눈에 띄는 존재감을 위한 대형 프린트). 직소 퍼즐 (캐릭터의 시각 예술). 문구류 (노트, 펜, 클리어 파일 등, 원본 아트워크의 변형 버전). 판지 (원본 아트워크의 변형 버전). 봉제 인형 (원본 아트워크의 변형 버전). 전시: 상품들은 편의점 분위기를 유지하면서도 캐릭터에 대한 사랑으로 공간을 가득 채우며 선반에 깔끔하게 진열되어 있습니다. 십대 여성 팬들이 집어 들고 싶어 할 수밖에 없는 방식으로 배열되어 있습니다. 전체적인 톤: 꿈같은 상품 판매 공간. 귀여움과 팝이 전면에 내세워지며, 편의점임에도 불구하고 "팬 활동의 성지"로 제시됩니다. 해상도: 4K, 4000px: 3000px'
+    inputImages: ['https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case82/input.png'],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case82/output.png',
+    prompt: "Remove the background from this illustration and turn it into merchandise like figurines.\nImage: Photorealistic\nLocation:\nThe shelves of a fictional convenience store that doesn't exist in Japan. The cute, pop atmosphere is complemented by neatly arranged merchandise featuring the illustration. The store's interior is dreamily bright and special, creating a special space that excites fans.\n\nCharacters:\nThese merchandise are displayed on the shelves.\n\nMerchandise Lineup:\nTwo large, approximately 50cm-long figures in the center of the screen (for a striking display)\nAcrylic stands (deformed versions of the original artwork)\n\nChibi figures (deformed versions of the original artwork)\n\nDakimakura pillows (large prints for a striking presence)\n\nJigsaw puzzles (visual art of the characters)\n\nStationery (notebooks, pens, clear files, etc., deformed versions of the original artwork)\n\nCardboards (deformed versions of the original artwork)\n\nPlush toys (deformed versions of the original artwork)\n\nDisplay:\nThe merchandise are neatly arranged on the shelves, maintaining the atmosphere of a convenience store while still filling the space with love for the characters. They're arranged in a way that teenage female fans can't help but want to pick them up.\n\nOverall tone:\nA dreamlike merchandise sales space. Cuteness and pop are at the forefront, and despite being a convenience store, it's presented as a 'holy land for fan activities.'\nResolution: 4K, 4000px: 3000px",
+    prompt_ko: "이 일러스트에서 배경을 제거하고 피규어 같은 상품으로 만들어주세요.\n이미지: 사실적\n장소:\n일본에 존재하지 않는 가상의 편의점 선반. 귀엽고 팝적인 분위기는 일러스트가 그려진 깔끔하게 정돈된 상품들로 보완됩니다. 가게 내부는 꿈결처럼 밝고 특별하여 팬들을 설레게 하는 특별한 공간을 만듭니다.\n\n캐릭터:\n이 상품들은 선반에 진열되어 있습니다.\n\n상품 라인업:\n화면 중앙에 있는 약 50cm 길이의 대형 피규어 2개(인상적인 전시용)\n아크릴 스탠드(원본 아트워크의 변형 버전)\n\n꼬마 피규어(원본 아트워크의 변형 버전)\n\n다키마쿠라 베개(인상적인 존재감을 위한 대형 프린트)\n\n직소 퍼즐(캐릭터의 시각 예술)\n\n문구류(노트, 펜, 클리어 파일 등, 원본 아트워크의 변형 버전)\n\n판지(원본 아트워크의 변형 버전)\n\n봉제 인형(원본 아트워크의 변형 버전)\n\n전시:\n상품들은 선반에 깔끔하게 정돈되어 편의점 분위기를 유지하면서도 캐릭터에 대한 사랑으로 공간을 가득 채웁니다. 10대 여성 팬들이 집어 들고 싶어 할 수밖에 없도록 배열되어 있습니다.\n\n전체적인 톤:\n꿈같은 상품 판매 공간. 귀여움과 팝이 전면에 있으며, 편의점임에도 불구하고 '팬 활동의 성지'로 제시됩니다.\n해상도: 4K, 4000px: 3000px"
   },
   {
     id: 88,
@@ -112,174 +99,97 @@ export const productsAndMockupsCases: Case[] = [
     category: '제품 & 목업',
     author: '@NanoBanana_labs',
     sourceUrl: 'https://x.com/NanoBanana_labs/status/1967191346017673334',
-    inputImages: ['/images/cases/88/input.png'],
-    outputImage: '/images/cases/88/output.png',
+    inputImages: [],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case88/output.png',
     prompt: 'A 1/7 scale commercialized collectible figure of the character from the photo, crafted in a highly realistic style. The figure is placed in a detailed beach environment with sand, seashells, and gentle ocean waves. The entire toy display is enclosed inside a clear souvenir glass bottle, giving it a premium miniature diorama look, with realistic lighting and shadows',
-    prompt_ko: '사진 속 캐릭터를 1/7 스케일로 상품화한 수집용 피규어로, 매우 사실적인 스타일로 제작되었습니다. 피규어는 모래, 조개껍질, 잔잔한 파도가 있는 상세한 해변 환경에 놓여 있습니다. 전체 장난감 디스플레이는 투명한 기념품 유리병 안에 들어 있어 고급스러운 미니어처 디오라마 느낌을 주며, 사실적인 조명과 그림자가 있습니다.'
+    prompt_ko: '사진 속 캐릭터를 1/7 스케일로 상업화한 수집용 피규어로, 매우 사실적인 스타일로 제작되었습니다. 피규어는 모래, 조개껍질, 잔잔한 파도가 있는 섬세한 해변 환경에 배치되어 있습니다. 전체 장난감 디스플레이는 투명한 기념품 유리병 안에 들어 있어, 사실적인 조명과 그림자와 함께 고급스러운 미니어처 디오라마 느낌을 줍니다.'
   },
   {
-    id: 110,
-    title: '3D 치비 제안 장면',
+    id: 89,
+    title: '미니어처 상점',
     category: '제품 & 목업',
-    author: '@balconychy',
-    sourceUrl: 'https://x.com/balconychy/status/1909417750587486469',
-    inputImages: ['/images/cases/110/input.jpg'],
-    outputImage: '/images/cases/110/example_proposal_scene_q_realistic.png',
-    prompt: 'Transform the two people in the photo into chibi-style 3D cartoon characters. Change the scene to a proposal setting, with a soft pastel-colored floral arch in the background. Use romantic tones for the overall background. Rose petals are scattered on the ground. While the characters are rendered in cute chibi 3D style, the environment—including the arch, lighting, and textures—should be realistic and photorealistic.',
-    prompt_ko: '사진 속 두 사람을 치비 스타일 3D 만화 캐릭터로 변신시켜 주세요. 장면을 프로포즈 설정으로 바꾸고, 배경에는 부드러운 파스텔 톤의 꽃 아치를 넣어주세요. 전체 배경에 로맨틱한 톤을 사용하고, 바닥에는 장미 꽃잎을 흩뿌려주세요. 캐릭터는 귀여운 치비 3D 스타일로 렌더링되지만, 아치, 조명, 질감을 포함한 환경은 사실적이고 포토리얼리스틱해야 합니다.'
+    author: '@NanoBanana_labs',
+    sourceUrl: 'https://x.com/NanoBanana_labs/status/1966791308321910922',
+    inputImages: [],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case89/output.png',
+    prompt: 'Tiny diorama shop for [BRAND]. Roof made of oversized [PRODUCT], big [BRAND] logo sign above the window, vendor handing a [PRODUCT] to a customer, ground covered with many [PRODUCT]. Hand-made polymer-clay look, studio macro photo, soft light, shallow depth of field, vertical 3:4',
+    prompt_ko: '[브랜드]를 위한 작은 디오라마 상점. 거대한 [제품]으로 만든 지붕, 창문 위의 큰 [브랜드] 로고 간판, 고객에게 [제품]을 건네주는 상인, 많은 [제품]으로 덮인 땅. 손으로 만든 폴리머 클레이 느낌, 스튜디오 매크로 사진, 부드러운 조명, 얕은 피사계 심도, 세로 3:4'
   },
   {
-    id: 146,
-    title: '귀여운 치비 마트료시카 인형 (진주 귀걸이를 한 소녀)',
+    id: 117,
+    title: '레고 수집용 피규어',
     category: '제품 & 목업',
     author: '@ZHO_ZHO_ZHO',
-    sourceUrl: 'https://x.com/ZHO_ZHO_ZHO/status/1911669883315818497',
-    inputImages: ['/images/cases/146/input.jpg'],
-    outputImage: '/images/cases/146/example_matryoshka_pearl_earring.png',
-    prompt: 'Transform the person in the image into a set of cute chibi-style Russian nesting dolls (🪆), with a total of five dolls arranged from largest to smallest. Place them on an elegant wooden table. Horizontal aspect ratio: 3:2.',
-    prompt_ko: '이미지 속 인물을 귀여운 치비 스타일의 러시아 인형(🪆) 세트로 변환해주세요. 총 다섯 개의 인형을 가장 큰 것부터 가장 작은 것 순으로 배열합니다. 우아한 나무 테이블 위에 놓아주세요. 가로세로 비율: 3:2.'
-  },
-  {
-    id: 148,
-    title: 'ESC 키캡 미니어처 디오라마',
-    category: '제품 & 목업',
-    author: '@egeberkina',
-    sourceUrl: 'https://x.com/egeberkina/status/1911368319212408926',
+    sourceUrl: 'https://x.com/ZHO_ZHO_ZHO/status/1910644499354968091',
     inputImages: [],
-    outputImage: '/images/cases/148/example_esc_keycap_diorama.png',
-    prompt: 'A hyper-realistic isometric 3D render of a miniature computer setup inside a translucent mechanical keyboard keycap, specifically placed on the ESC key of a real matte-finished mechanical keyboard. Inside the keycap, a tiny figure sits in a modern ergonomic chair, wearing a cozy textured hoodie, working at a glowing ultra-realistic computer screen. The environment is packed with lifelike miniature tech accessories: real-material desk lamps, monitors with reflections, tiny speaker grills, tangled cables, and ceramic mugs. The base of the scene is made of soil, rocks, and moss, with photorealistic textures and imperfections. The lighting inside the cap mimics natural morning sun, casting soft shadows and warm tones, while the outside has cold ambient reflections from the surrounding keyboard. The word “ESC” is subtly etched onto the top of the translucent keycap with a faint frosted glass effect — just barely visible depending on the angle. The surrounding keyboard keys like F1, Q, Shift, and CTRL are crisp, textured, and photorealistically lit. Shot as if taken with a high-end mobile phone camera, with shallow depth of field, perfect white balance, and cinematic detail.',
-    prompt_ko: '실제 무광 마감 기계식 키보드의 ESC 키에 특별히 배치된 반투명 기계식 키보드 키캡 내부의 미니어처 컴퓨터 설정에 대한 초현실적인 아이소메트릭 3D 렌더링. 키캡 내부에는 작은 피규어가 현대적인 인체공학적 의자에 앉아 아늑한 질감의 후드를 입고 빛나는 초현실적인 컴퓨터 화면에서 작업하고 있습니다. 환경은 실제 재질의 책상 램프, 반사가 있는 모니터, 작은 스피커 그릴, 엉킨 케이블, 세라믹 머그와 같은 실물과 같은 미니어처 기술 액세서리로 가득 차 있습니다. 장면의 베이스는 흙, 돌, 이끼로 만들어졌으며 사실적인 질감과 불완전함이 있습니다. 캡 내부의 조명은 자연스러운 아침 햇살을 모방하여 부드러운 그림자와 따뜻한 톤을 드리우고, 외부에는 주변 키보드의 차가운 주변 반사가 있습니다. "ESC"라는 단어는 반투명 키캡 상단에 희미한 반투명 유리 효과로 미묘하게 새겨져 있으며 각도에 따라 간신히 보입니다. F1, Q, Shift, CTRL과 같은 주변 키보드 키는 선명하고 질감이 있으며 사실적으로 조명됩니다. 고급 휴대폰 카메라로 촬영한 것처럼 얕은 피사계 심도, 완벽한 화이트 밸런스, 영화 같은 디테일로 촬영되었습니다.'
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/8/example_lego_collectible.png',
+    prompt: "Generate a vertically-oriented image based on my uploaded photo, using the following prompt:\nClassic LEGO minifigure style in a miniature scene — an animal stands beside me. The color palette of the animal should match mine.\nPlease design the animal based on your understanding of me. You may choose any creature — real, surreal, or fantastical — that you feel best reflects my personality.\nThe entire scene is set within a transparent glass cube, with a minimalist interior design.\nThe base of the miniature is matte black with silver accents, following a clean and modern aesthetic.\nOn the base, there is an elegantly engraved nameplate in a refined serif font, displaying the name of the animal.\nThe lower part of the base subtly incorporates finely etched biological classification details, similar to a natural history museum display.\nThe overall composition should resemble a high-end collectible artwork: meticulously crafted, curated in style, and lit with refined lighting.\nBalance is key to the layout. The background should feature a smooth gradient transition from dark to light tones, selected to match the dominant color theme.",
+    prompt_ko: "업로드한 사진을 기반으로 세로 방향 이미지를 생성해주세요. 다음 프롬프트를 사용하세요:\n클래식 레고 미니피규어 스타일의 미니어처 장면 — 동물 한 마리가 제 옆에 서 있습니다. 동물의 색상 팔레트는 제 것과 일치해야 합니다.\n저에 대한 이해를 바탕으로 동물을 디자인해주세요. 제 성격을 가장 잘 반영한다고 생각하는 실제, 초현실적 또는 환상적인 생물을 선택할 수 있습니다.\n전체 장면은 미니멀리스트 인테리어 디자인의 투명한 유리 큐브 안에 설정됩니다.\n미니어처의 베이스는 무광 검정색에 은색 악센트가 있으며, 깨끗하고 현대적인 미학을 따릅니다.\n베이스에는 세련된 세리프 글꼴로 우아하게 새겨진 이름표가 있으며, 동물의 이름이 표시됩니다.\n베이스 하단에는 자연사 박물관 전시와 유사하게 미세하게 새겨진 생물학적 분류 세부 정보가 미묘하게 통합되어 있습니다.\n전체적인 구성은 고급 수집용 예술 작품을 닮아야 합니다: 세심하게 제작되고, 스타일리시하게 큐레이팅되었으며, 세련된 조명으로 비춰집니다.\n레이아웃의 균형이 중요합니다. 배경은 지배적인 색상 테마와 일치하도록 선택된 어두운 톤에서 밝은 톤으로 부드러운 그라데이션 전환을 특징으로 해야 합니다."
   },
   {
-    id: 154,
-    title: '원피스 테마 피규어 제작',
-    category: '제품 & 목업',
-    author: '@dotey',
-    sourceUrl: 'https://x.com/dotey/status/1909047547563213145',
-    inputImages: ['/images/cases/154/input.jpg'],
-    outputImage: '/images/cases/154/example_one_piece_figure_creation.png',
-    prompt: 'Transform the person in the photo into a One Piece-themed anime-style action figure, presented inside a collectible figure box designed in the visual style of the One Piece universe. The box is shown in an isometric view. Inside the box, display the character reimagined in the One Piece anime art style, posed dynamically and accompanied by essential everyday items such as a pistol, a wristwatch, a suit, and leather shoes — all miniaturized and arranged like collectible accessories. Next to the box, include a realistic, fully rendered version of the actual figure itself, outside of the packaging. This figure should be rendered with high detail and realism, showcasing the material textures and craftsmanship, as if it were a professionally photographed product.',
-    prompt_ko: '사진 속 인물을 원피스 테마의 애니메이션 스타일 액션 피규어로 변신시켜, 원피스 세계관의 비주얼 스타일로 디자인된 수집용 피규어 상자 안에 담아주세요. 상자는 아이소메트릭 뷰로 보여줍니다. 상자 안에는 원피스 애니메이션 아트 스타일로 재해석된 캐릭터를 역동적인 포즈로 전시하고, 권총, 손목시계, 정장, 가죽 신발 등 필수 일상용품을 미니어처화하여 수집용 액세서리처럼 배열해주세요. 상자 옆에는 포장되지 않은 실제 피규어 자체의 사실적이고 완벽하게 렌더링된 버전을 포함해주세요. 이 피규어는 마치 전문적으로 촬영된 제품처럼 재료의 질감과 장인 정신을 보여주는 높은 디테일과 사실감으로 렌더링되어야 합니다.'
-  },
-  {
-    id: 157,
+    id: 127,
     title: '펀코 팝 피규어 제작',
     category: '제품 & 목업',
     author: '@dotey',
     sourceUrl: 'https://x.com/dotey/status/1909047283485671924',
-    inputImages: ['/images/cases/157/input.jpg'],
-    outputImage: '/images/cases/157/funko-pop-james-bond-figure-and-box.png',
-    prompt: 'Transform the person in the photo into the style of a Funko Pop figure box, presented in isometric view. The packaging is labeled with the title “JAMES BOND.” Inside the box, display a chibi-style figure based on the person in the photo, along with their essential accessories: a pistol, a wristwatch, a suit, and other signature items. Next to the box, show a realistic rendering of the actual figure outside the packaging, with detailed textures and lighting to achieve a lifelike product display.',
-    prompt_ko: '사진 속 인물을 펀코 팝 피규어 상자 스타일로 변신시켜 아이소메트릭 뷰로 제시해주세요. 포장에는 "JAMES BOND"라는 제목이 붙어 있습니다. 상자 안에는 사진 속 인물을 기반으로 한 치비 스타일 피규어와 함께 권총, 손목시계, 정장 등 그의 시그니처 아이템들을 액세서리로 전시해주세요. 상자 옆에는 포장되지 않은 실제 피규어를 사실적으로 렌더링하여 질감과 조명을 살린 생생한 제품 디스플레이를 보여주세요.'
+    inputImages: [],
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/24/funko-pop-james-bond-figure-and-box.png',
+    prompt: "Transform the person in the photo into the style of a Funko Pop figure box, presented in isometric view.\nThe packaging is labeled with the title “JAMES BOND.”\nInside the box, display a chibi-style figure based on the person in the photo, along with their essential accessories: a pistol, a wristwatch, a suit, and other signature items.\nNext to the box, show a realistic rendering of the actual figure outside the packaging, with detailed textures and lighting to achieve a lifelike product display.",
+    prompt_ko: "사진 속 인물을 아이소메트릭 뷰로 표현된 펀코 팝 피규어 상자 스타일로 변환하세요.\n포장에는 'JAMES BOND'라는 제목이 붙어 있습니다.\n상자 안에는 사진 속 인물을 바탕으로 한 꼬마 스타일 피규어와 함께 권총, 손목시계, 정장 등 필수 액세서리와 기타 시그니처 아이템을 전시하세요.\n상자 옆에는 포장 밖 실제 피규어의 사실적인 렌더링을 보여주세요. 실물과 같은 제품 디스플레이를 위해 상세한 질감과 조명을 사용하세요."
   },
   {
-    id: 162,
-    title: '카와이 에나멜 핀',
-    category: '제품 & 목업',
-    author: '@gnrlyxyz',
-    sourceUrl: 'https://x.com/gnrlyxyz/status/1914303110853583302',
-    inputImages: ['/images/cases/162/input.jpg'],
-    outputImage: '/images/cases/162/example_enamel_pins_einstein.png',
-    prompt: 'Turn the subject in the attached image into a kawaii enamel pin. Use glossy metal outlines and vibrant enamel fill. No extra added features. Square mockup format. White background.',
-    prompt_ko: '첨부된 이미지 속 피사체를 카와이 에나멜 핀으로 바꿔주세요. 광택 있는 금속 윤곽선과 생생한 에나멜 채우기를 사용하세요. 추가 기능은 없습니다. 정사각형 목업 형식. 흰색 배경.'
-  },
-  {
-    id: 163,
-    title: '이모지 크림 아이스크림',
+    id: 135,
+    title: '유명 회화 캐릭터 시리얼 광고',
     category: '제품 & 목업',
     author: '@ZHO_ZHO_ZHO',
-    sourceUrl: 'https://x.com/ZHO_ZHO_ZHO/status/1914574278911000967',
+    sourceUrl: 'https://x.com/ZHO_ZHO_ZHO/status/1909542765857587310',
     inputImages: [],
-    outputImage: '/images/cases/163/example_ice_cream_emoji_strawberry.png',
-    prompt: 'Generate an image: Transform the [🍓] into a creamy ice cream bar, with cream flowing in curved swirls on top, making it look delicious and tempting. The ice cream is floating at a 45-degree angle in mid-air, rendered in a cute chibi-style 3D aesthetic, set against a solid color background with a unified color palette.',
-    prompt_ko: '이미지 생성: [🍓]를 크림 같은 아이스크림 바로 변환하고, 위에 크림이 곡선 소용돌이 모양으로 흘러내려 맛있고 유혹적으로 보이게 만드세요. 아이스크림은 공중에 45도 각도로 떠 있으며, 귀여운 치비 스타일 3D 미학으로 렌더링되고, 통일된 색상 팔레트의 단색 배경에 설정됩니다.'
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/26/example_master_oats_ad.png',
+    prompt: `“Master Oats”: Based on the visual features of the person in the uploaded photo, generate a custom oatmeal mix that reflects their personality traits — for example, using vegetables, fruits, yogurt, whole grains, etc.\n\nDesign a unique cereal box and package aesthetic that aligns with this tailored mix.\n\nThen, create an advertising cover featuring the person as the mascot on the cereal box. The character should retain their recognizable features but be transformed into a cute chibi-style 3D figure with a C4D-quality rendering.\n\nThe oatmeal and packaging should be presented in a setting that matches the mood — such as a minimalist kitchen, a sleek supermarket display, or a clean design counter.\n\nThe process includes:\n– Character analysis and oat mix pairing\n– Cereal box concept and design\n– Display environment selection\n– Final image with mascot figure, packaging, and styled scene composition\n\nAll visuals should be balanced, modern, and appealing, reflecting a premium and fun oat brand identity.`,
+    prompt_ko: `“마스터 오트”: 업로드된 사진 속 인물의 시각적 특징을 바탕으로, 그들의 성격 특성을 반영하는 맞춤형 오트밀 믹스를 생성하세요 — 예를 들어, 채소, 과일, 요거트, 통곡물 등을 사용합니다.\n\n이 맞춤형 믹스와 어울리는 독특한 시리얼 상자와 포장 미학을 디자인하세요.\n\n그런 다음, 시리얼 상자에 그 사람을 마스코트로 한 광고 표지를 만드세요. 캐릭터는 알아볼 수 있는 특징을 유지하되, C4D 품질의 렌더링으로 귀여운 꼬마 스타일의 3D 피규어로 변환되어야 합니다.\n\n오트밀과 포장은 미니멀리스트 주방, 세련된 슈퍼마켓 진열대, 또는 깨끗한 디자인 카운터와 같이 분위기에 맞는 환경에 제시되어야 합니다.\n\n과정은 다음과 같습니다:\n– 캐릭터 분석 및 오트 믹스 페어링\n– 시리얼 상자 컨셉 및 디자인\n– 디스플레이 환경 선택\n– 마스코트 피규어, 포장, 스타일링된 장면 구성을 포함한 최종 이미지\n\n모든 시각 자료는 균형 있고, 현대적이며, 매력적이어야 하며, 프리미엄하고 재미있는 오트 브랜드 아이덴티티를 반영해야 합니다.`
   },
   {
-    id: 164,
-    title: '스팀펑크 기계 물고기',
-    category: '제품 & 목업',
-    author: '@f-is-h',
-    sourceUrl: 'https://github.com/f-is-h/f-is-h/blob/main/images/streampank-fish-4.png',
-    inputImages: [],
-    outputImage: '/images/cases/164/example_steampunk_fish.jpg',
-    prompt: 'A steampunk-style mechanical fish with a brass body and clearly visible gear mechanisms when in motion. Its mechanical teeth can be slightly seen, neatly arranged and closed, with both upper and lower teeth visible. Each tooth is triangular in shape and made of diamond material. The tail fin has a metal wire mesh structure, while other fins are made of semi-transparent amber-colored glass with some subtle bubbles inside. The eyes are multi-faceted rubies, with clearly visible reflective shine. The fish has "f-is-h" text clearly visible on its body, with all lowercase letters and careful attention to the hyphen placement. The image is square, showing the entire fish in the center of the frame, with its head pointing to the right. There is adequate white space around the fish, with more space on the left and right sides. The background has subtle steampunk-style gear patterns. The entire fish looks very cool. This is a high-definition image with extremely rich details and unique texture and aesthetics. The image should not be too dark.',
-    prompt_ko: '움직일 때 기어 메커니즘이 선명하게 보이는 놋쇠 몸체의 스팀펑크 스타일 기계 물고기. 기계 이빨이 살짝 보이며, 깔끔하게 배열되어 닫혀 있고, 위아래 이빨이 모두 보입니다. 각 이빨은 삼각형 모양이며 다이아몬드 재질로 만들어졌습니다. 꼬리 지느러미는 금속 와이어 메쉬 구조이고, 다른 지느러미는 내부에 미묘한 기포가 있는 반투명 호박색 유리로 만들어졌습니다. 눈은 다면 루비이며, 반사광이 선명하게 보입니다. 물고기 몸에는 "f-is-h" 텍스트가 선명하게 보이며, 모두 소문자이고 하이픈 위치에 주의를 기울였습니다. 이미지는 정사각형이며, 프레임 중앙에 물고기 전체가 보이고 머리는 오른쪽을 향하고 있습니다. 물고기 주위에는 충분한 흰색 공간이 있으며, 왼쪽과 오른쪽에 더 많은 공간이 있습니다. 배경에는 미묘한 스팀펑크 스타일의 기어 패턴이 있습니다. 전체 물고기는 매우 멋져 보입니다. 이것은 매우 풍부한 디테일과 독특한 질감 및 미학을 가진 고화질 이미지입니다. 이미지가 너무 어두워서는 안 됩니다.'
-  },
-  {
-    id: 165,
-    title: '초현실적인 수중 장면 아이스크림',
-    category: '제품 & 목업',
-    author: '@madpencil_',
-    sourceUrl: 'https://x.com/madpencil_/status/1920037538372128998',
-    inputImages: [],
-    outputImage: '/images/cases/165/surreal-underwater-scene-popsicle.png',
-    prompt: 'Tilt POV shot of a hand holding a surreal popsicle with a transparent blue exterior, revealing an underwater scene inside: a tiny scuba diver with tiny fish floating with bubbles, ocean waves crashing, and a green popsicle stick running through the center. The popsicle is melting slightly, with a wooden stick at the bottom, hand is holding it by the wooden stick, soft focus new york street background, premium product photography',
-    prompt_ko: '투명한 파란색 외관의 초현실적인 아이스크림을 손에 들고 있는 틸트 POV 샷. 내부에는 수중 장면이 드러납니다: 거품과 함께 떠다니는 작은 스쿠버 다이버와 작은 물고기들, 부서지는 파도, 중앙을 관통하는 녹색 아이스크림 막대. 아이스크림은 약간 녹고 있으며, 아래에는 나무 막대가 있고 손은 나무 막대를 잡고 있습니다. 부드러운 초점의 뉴욕 거리 배경, 프리미엄 제품 사진.'
-  },
-  {
-    id: 172,
-    title: '금 펜던트 목걸이',
-    category: '제품 & 목업',
-    author: '@azed_ai',
-    sourceUrl: 'https://x.com/azed_ai/status/1915770501705925106',
-    inputImages: [],
-    outputImage: '/images/cases/172/gold_pendant_necklace.png',
-    prompt: 'A photorealistic close-up of a gold pendant necklace held by female hand. The pendant features a bas-relief engraving of [image /emoji]. The pendant hangs from a polished gold chain. The background is softly blurred with neutral beige tones, and natural lighting, realistic skin tones, Product photography, 16:9 aspect ratio.',
-    prompt_ko: '여성의 손에 들린 금 펜던트 목걸이의 사실적인 클로즈업. 펜던트에는 [이미지/이모지]의 부조 조각이 새겨져 있습니다. 펜던트는 광택 있는 금 체인에 매달려 있습니다. 배경은 중성적인 베이지 톤으로 부드럽게 흐려져 있으며, 자연광, 사실적인 피부 톤, 제품 사진, 16:9 종횡비.'
-  },
-  {
-    id: 173,
-    title: '귀여운 치비 키체인',
-    category: '제품 & 목업',
-    author: '@azed_ai',
-    sourceUrl: 'https://x.com/azed_ai/status/1916521742052503804',
-    inputImages: ['/images/cases/173/input.jpg'],
-    outputImage: '/images/cases/173/example_keychain_chibi.png',
-    prompt: 'A close-up photo of a cute, colorful keychain held by person\'s hand. The keychain features a chibi-style of the [attached image ]. The keychain is made of soft rubber with bold black outlines and attached to a small silver keyring, neutral background',
-    prompt_ko: '사람의 손에 들려 있는 귀엽고 다채로운 키체인의 클로즈업 사진. 키체인은 [첨부된 이미지]의 치비 스타일을 특징으로 합니다. 키체인은 굵은 검은색 윤곽선이 있는 부드러운 고무로 만들어졌으며 작은 은색 열쇠고리에 부착되어 있습니다. 중성적인 배경.'
-  },
-  {
-    id: 184,
-    title: '동물 실리콘 손목 받침대',
+    id: 155,
+    title: '해피 캡슐 제작',
     category: '제품 & 목업',
     author: '@ZHO_ZHO_ZHO',
-    sourceUrl: 'https://x.com/ZHO_ZHO_ZHO/status/1918525296577327574',
+    sourceUrl: 'https://x.com/ZHO_ZHO_ZHO/status/1911724629460455896',
     inputImages: [],
-    outputImage: '/images/cases/184/case.png',
-    prompt: 'Create an image of a cute chibi-style silicone wrist rest based on the {🐼} emoji. The wrist rest is made of soft, food-grade silicone with a skin-friendly matte surface. The interior is filled with slow-rebound foam. Designed in a personified cartoon style, the expression is lively, with both arms stretched out as if hugging the user’s wrist while lying on a desk. The overall shape is round, soft, and adorable, featuring the classic {🐼} color scheme. The design is comforting and cute, suitable for office use. The background is a solid white color with soft lighting. Rendered in a product photography style, the angle is either front-facing or at a 45-degree top-down view, showcasing high-definition details and emphasizing the silicone texture and comfort functionality.',
-    prompt_ko: '{🐼} 이모지를 기반으로 귀여운 치비 스타일 실리콘 손목 받침대 이미지를 만들어 주세요. 손목 받침대는 부드러운 식품 등급 실리콘으로 만들어졌으며 피부 친화적인 무광택 표면을 가지고 있습니다. 내부는 느린 반발 폼으로 채워져 있습니다. 의인화된 만화 스타일로 디자인되었으며, 표정은 생생하고, 책상에 누워 사용자의 손목을 껴안는 것처럼 양팔을 뻗고 있습니다. 전체적인 모양은 둥글고, 부드럽고, 사랑스러우며, 클래식한 {🐼} 색 구성표를 특징으로 합니다. 디자인은 편안하고 귀여우며, 사무실 사용에 적합합니다. 배경은 부드러운 조명이 있는 단색 흰색입니다. 제품 사진 스타일로 렌더링되었으며, 각도는 정면 또는 45도 하향식 뷰로 고화질 디테일을 보여주고 실리콘 질감과 편안함 기능을 강조합니다.'
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/46/example_happy_capsule.png',
+    prompt: `Title (large text): Fast-Acting Happiness Capsule\nA capsule pill with a green top in Starbucks green and a transparent bottom, printed with the Starbucks logo. Inside the capsule are numerous coffee beans.\nDescription (small text): Take when feeling sad or down. Three times a day, two capsules per dose.\nBuy button: Same color as the capsule.\nBelow the button, display the price: $9.\nPlease follow medical advice and purchase as needed.`,
+    prompt_ko: `제목(큰 글씨): 즉효성 행복 캡슐\n스타벅스 녹색의 녹색 상단과 투명한 하단을 가진 캡슐 알약으로, 스타벅스 로고가 인쇄되어 있습니다. 캡슐 안에는 수많은 커피 원두가 들어 있습니다.\n설명(작은 글씨): 슬프거나 우울할 때 복용하세요. 하루 세 번, 한 번에 두 캡슐씩.\n구매 버튼: 캡슐과 같은 색상.\n버튼 아래에 가격 표시: $9.\n의사의 조언을 따르고 필요에 따라 구매하세요.`
   },
   {
-    id: 188,
-    title: '어린이 색칠 페이지 일러스트 (색상 참조 포함)',
+    id: 160,
+    title: '귀여운 식물 화분',
     category: '제품 & 목업',
-    author: '@dotey',
-    sourceUrl: 'https://x.com/dotey/status/1919522110395080838',
+    author: '@azed_ai',
+    sourceUrl: 'https://x.com/azed_ai/status/1923739813414568075',
     inputImages: [],
-    outputImage: '/images/cases/188/case.png',
-    prompt: 'A black and white line drawing coloring illustration, suitable for direct printing on standard size (8.5x11 inch) paper, without paper borders. The overall illustration style is fresh and simple, using clear and smooth black outline lines, without shadows, grayscale, or color filling, with a pure white background for easy coloring. [At the same time, for the convenience of users who are not good at coloring, please generate a complete colored version in the lower right corner as a small image for reference] Suitable for: [6-9 year old children] Scene description: [A unicorn is walking on the grass in the forest, with bright sunshine, blue sky and white clouds]',
-    prompt_ko: '표준 크기(8.5x11인치) 용지에 직접 인쇄하기에 적합한 흑백 선화 색칠 일러스트레이션으로, 종이 테두리가 없습니다. 전체적인 일러스트레이션 스타일은 신선하고 단순하며, 그림자, 회색조 또는 색 채우기 없이 선명하고 부드러운 검은색 윤곽선을 사용하고, 쉽게 색칠할 수 있도록 순수한 흰색 배경을 사용합니다. [동시에, 색칠에 능숙하지 않은 사용자의 편의를 위해, 오른쪽 하단에 참조용 작은 이미지로 완성된 컬러 버전을 생성해주세요] 적합 대상: [6-9세 어린이] 장면 설명: [유니콘이 숲속 잔디 위를 걷고 있으며, 밝은 햇살, 파란 하늘과 흰 구름이 있습니다]'
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/55/cute_plant_planter.png',
+    prompt: `A high-quality photo of a cute ceramic [object/animal]-shaped planter with a glossy finish, filled with a variety of vibrant succulents and greenery including a spiky Haworthia, a rosette-shaped Echeveria, and delicate white flowers. The planter has a friendly face and sits on a soft, neutral background with diffused natural lighting, showcasing fine textures and color contrast in a clean, minimalistic composition`,
+    prompt_ko: `광택 마감 처리된 귀여운 세라믹 [물건/동물] 모양의 화분에 가시가 있는 하월시아, 장미 모양의 에케베리아, 섬세한 흰 꽃 등 다양하고 생생한 다육 식물과 녹색 식물이 가득 담긴 고품질 사진. 화분은 친근한 얼굴을 하고 있으며, 부드럽고 중성적인 배경에 확산된 자연광 아래 놓여 있어, 깨끗하고 미니멀한 구성으로 미세한 질감과 색상 대비를 보여줍니다.`
   },
   {
-    id: 190,
-    title: '브랜드 기계식 키캡',
+    id: 203,
+    title: '제품 목업 생성',
     category: '제품 & 목업',
-    author: '@egeberkina',
-    sourceUrl: 'https://x.com/egeberkina/status/1918291652210311278',
-    inputImages: [],
-    outputImage: '/images/cases/190/case.png',
-    prompt: 'ultra-realistic 3D render of four mechanical keyboard keycaps in a tight 2x2 grid, all keys touching. View from an isometric angle. One key is transparent with the word “{just}” printed in {white}. The other three colors are: {black, purple, and white}. One key features the {Github} logo. The other two say "{fork}" and "{it}". Realistic plastic texture, rounded sculpted keycaps, soft shadows, clean light-gray background.',
-    prompt_ko: '4개의 기계식 키보드 키캡을 2x2 격자로 촘촘하게 배열한 초현실적인 3D 렌더링. 모든 키가 서로 닿아 있습니다. 아이소메트릭 각도에서 본 모습. 키 하나는 투명하며 "{just}"라는 단어가 {흰색}으로 인쇄되어 있습니다. 나머지 세 가지 색상은 {검정, 보라, 흰색}입니다. 키 하나에는 {Github} 로고가 있습니다. 나머지 두 개에는 "{fork}"와 "{it}"이라고 쓰여 있습니다. 사실적인 플라스틱 질감, 둥근 조각 키캡, 부드러운 그림자, 깨끗한 밝은 회색 배경.'
+    author: 'Gemini',
+    sourceUrl: '#',
+    inputImages: ['https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/product/input_1.png'],
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/product/output_1.jpg',
+    prompt: 'Place this logo on a black coffee mug, realistic mockup.',
+    prompt_ko: '이 로고를 검은색 커피 머그컵에 배치해줘, 사실적인 목업으로.',
   },
   {
-    id: 189,
-    title: '크롬 이모지 핀',
+    id: 204,
+    title: '책 표지 목업',
     category: '제품 & 목업',
-    author: '@egeberkina',
-    sourceUrl: 'https://x.com/egeberkina/status/1919398870867440124',
-    inputImages: [],
-    outputImage: '/images/cases/189/case.png',
-    prompt: 'highly detailed 3D render of a single metallic {👍} emoji pin attached to a vertical product card, ultra-glossy chrome finish, smooth rounded 3D icon, stylized futuristic design, soft reflections, clean shadows, paper card has a die-cut euro hole at the top center, bold title “{Awesome}” above the pin, fun tagline “{Smash that ⭐ if you like it!}” below, soft gray background, soft studio lighting, minimal aesthetic',
-    prompt_ko: '세로 제품 카드에 부착된 단일 금속 {👍} 이모지 핀의 매우 상세한 3D 렌더링, 초광택 크롬 마감, 부드러운 둥근 3D 아이콘, 스타일화된 미래 지향적인 디자인, 부드러운 반사, 깨끗한 그림자, 종이 카드 상단 중앙에 다이컷 유로 구멍이 있음, 핀 위에 굵은 제목 "{Awesome}", 아래에 재미있는 태그라인 "{Smash that ⭐ if you like it!}", 부드러운 회색 배경, 부드러운 스튜디오 조명, 미니멀한 미학'
-  },
+    author: 'Gemini',
+    sourceUrl: '#',
+    inputImages: ['https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/product/input_2.png'],
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/product/output_2.jpg',
+    prompt: 'Create a mockup of a book with this cover design.',
+    prompt_ko: '이 표지 디자인으로 된 책의 목업을 만들어줘.',
+  }
 ];

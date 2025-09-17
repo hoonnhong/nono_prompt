@@ -18,6 +18,7 @@ interface GalleryProps {
   onSearchChange: (term: string) => void; // 검색어 변경 시 호출될 콜백 함수
   selectedCategory: string; // 현재 선택된 카테고리
   onCategoryChange: (category: string) => void; // 카테고리 변경 시 호출될 콜백 함수
+  onStartNew: () => void; // '새로 시작하기' 클릭 시 호출될 콜백 함수
 }
 
 export const Gallery: React.FC<GalleryProps> = ({
@@ -29,7 +30,8 @@ export const Gallery: React.FC<GalleryProps> = ({
   searchTerm,
   onSearchChange,
   selectedCategory,
-  onCategoryChange
+  onCategoryChange,
+  onStartNew
 }) => {
   // 필터링된 케이스들을 다시 카테고리별로 그룹핑합니다.
   // 검색 결과가 카테고리 구조를 유지하며 표시되도록 하기 위함입니다.
@@ -44,7 +46,15 @@ export const Gallery: React.FC<GalleryProps> = ({
 
   return (
     <div className="bg-gray-800/50 rounded-xl border border-gray-700/50 p-4 sm:p-6 h-full flex flex-col">
-      <h2 className="text-2xl font-bold text-gray-100 mb-4">갤러리</h2>
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-2xl font-bold text-gray-100">갤러리</h2>
+        <button
+          onClick={onStartNew}
+          className="text-sm bg-gray-700 hover:bg-gray-600 text-yellow-300 font-semibold py-1 px-3 rounded-md transition-colors"
+        >
+          새로 시작하기
+        </button>
+      </div>
       
       {/* 필터링 및 검색 UI */}
       <div className="flex flex-col sm:flex-row gap-2 mb-4">
@@ -73,7 +83,7 @@ export const Gallery: React.FC<GalleryProps> = ({
       </div>
       
       {/* 갤러리 목록 (스크롤 가능 영역) */}
-      <div className="flex-grow overflow-y-auto pr-2 -mr-2" style={{maxHeight: 'calc(100vh - 18rem)'}}>
+      <div className="flex-grow overflow-y-auto pr-2 -mr-2" style={{maxHeight: 'calc(100vh - 20rem)'}}>
         <nav>
           {Object.keys(displayedCasesGrouped).length > 0 ? (
             <ul>

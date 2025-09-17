@@ -1,65 +1,74 @@
 /**
  * @file creativeTools.ts
- * @description '창의적 도구' 카테고리에 해당하는 예제 케이스 데이터 목록입니다.
- *              이미지를 변형하거나 특정 도구처럼 사용하는 창의적인 활용 사례를 포함합니다.
+ * @description '창의적 도구' 카테고리에 대한 예제 케이스 데이터입니다.
  */
-
 import type { Case } from '../../types';
 
 export const creativeToolsCases: Case[] = [
   {
-    id: 27,
-    title: '이미지에 워터마크 추가',
+    id: 21,
+    title: 'OOTD 의상 코디',
     category: '창의적 도구',
-    author: '@AiMachete',
-    sourceUrl: 'https://x.com/AiMachete/status/1963038793705128219',
-    inputImages: ['/images/cases/27/input.jpg'],
-    outputImage: '/images/cases/27/output.jpg',
-    prompt: 'Watermark the word ‘TRUMP’ over and over again across the whole image.',
-    prompt_ko: '이미지 전체에 \'TRUMP\'라는 단어를 반복해서 워터마크로 넣어주세요.'
+    author: '@302.AI',
+    sourceUrl: 'https://medium.com/%40302.AI/google-nano-banana-vs-qwen-gpt-flux-topping-the-image-editing-leaderboard-96038b01bdcd',
+    inputImages: ['https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case21/input.jpg'],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case21/output.jpg',
+    prompt: "Choose the person in Image 1 and dress them in all the clothing and accessories from Image 2. Shoot a series of realistic OOTD-style photos outdoors, using natural lighting, a stylish street style, and clear full-body shots. Keep the person's identity and pose from Image 1, but show the complete outfit and accessories from Image 2 in a cohesive, stylish way.",
+    prompt_ko: "이미지 1의 인물을 선택하여 이미지 2의 모든 의류와 액세서리를 입혀주세요. 자연광, 스타일리시한 스트리트 스타일, 선명한 전신 샷을 사용하여 야외에서 사실적인 OOTD 스타일 사진 시리즈를 촬영해주세요. 이미지 1의 인물의 정체성과 포즈는 유지하되, 이미지 2의 전체 의상과 액세서리를 조화롭고 스타일리시하게 보여주세요."
   },
   {
-    id: 55,
-    title: '이타샤 차량 만들기',
+    id: 56,
+    title: '만화 구성',
     category: '창의적 도구',
-    author: '@riddi0908',
-    sourceUrl: 'https://x.com/riddi0908/status/1963422536819249239',
-    inputImages: ['/images/cases/55/input.jpg'],
-    outputImage: '/images/cases/55/output.jpg',
-    prompt: 'Create a professional photograph of a sporty car with anime-style character artwork as itasha (painted car) design, shot at a famous tourist destination or scenic landmark.',
-    prompt_ko: '유명 관광지나 경치 좋은 랜드마크에서 촬영한, 애니메이션 스타일 캐릭터 아트워크가 이타샤(페인팅카) 디자인으로 적용된 스포티한 자동차의 전문적인 사진을 만들어주세요.'
+    author: '@namaedousiyoka',
+    sourceUrl: 'https://x.com/namaedousiyoka/status/1962461786181161340',
+    inputImages: ['https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case56/input.jpg', 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case56/input2.jpg'],
+    outputImage: 'https://raw.githubusercontent.com/PicoTrex/Awesome-Nano-Banana-images/main/images/case56/output.jpg',
+    prompt: 'Compose a manga scene with the character from image 1 in the setting of image 2.',
+    prompt_ko: '이미지 1의 캐릭터를 이미지 2의 배경에 넣어 만화 장면을 구성해주세요.'
   },
   {
-    id: 62,
-    title: '카메라 파라미터 재설정',
+    id: 139,
+    title: '35mm 필름 스타일 부유섬',
     category: '창의적 도구',
-    author: '@hckinz',
-    sourceUrl: 'https://x.com/hckinz/status/1962803203063586895',
-    inputImages: ['/images/cases/62/input.jpg'],
-    outputImage: '/images/cases/62/output.jpg',
-    prompt: 'RAW-ISO [100] - [F2.8-1/200 24mm] settings',
-    prompt_ko: 'RAW-ISO [100] - [F2.8-1/200 24mm] 설정'
+    author: '@dotey',
+    sourceUrl: 'https://x.com/dotey/status/1905020833451348283',
+    inputImages: [],
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/30/example_35mm_moscow_flying_island.png',
+    prompt: "35 mm photo of Moscow floating in the sky on a flying islands.",
+    prompt_ko: "하늘에 떠 있는 섬 위에 떠 있는 모스크바의 35mm 사진."
   },
   {
-    id: 86,
-    title: '다크 고딕 타로 카드',
+    id: 171,
+    title: '단어 의미를 글자에 통합하기',
     category: '창의적 도구',
-    author: '@ImperfectEngel',
-    sourceUrl: 'https://x.com/ImperfectEngel/status/1961833518163481001',
-    inputImages: ['/images/cases/86/input.png'],
-    outputImage: '/images/cases/86/output.png',
-    prompt: 'Generate a dark gothic tarot card featuring me from this image. Include “AI Artist - Shira” and [coffee, white fluffy chubby cat with pink bow, laptop, phone, headphones] as symbols, with moody shadows, intricate gothic borders, and mystical dark fantasy vibes.',
-    prompt_ko: '이 이미지 속 나를 주인공으로 한 어두운 고딕 타로 카드를 생성해주세요. "AI 아티스트 - 시라"와 [커피, 핑크 리본을 단 통통한 흰 털 고양이, 노트북, 휴대폰, 헤드폰]을 상징으로 포함하고, 분위기 있는 그림자, 복잡한 고딕 테두리, 신비로운 다크 판타지 분위기를 더해주세요.'
+    author: '@dotey',
+    sourceUrl: 'https://x.com/dotey/status/1918529055340576812',
+    inputImages: [],
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/87/case.png',
+    prompt: `Integrate the meaning of the word into the letters, cleverly blending graphics and letters.\nWord: {beautify}\nAdd a brief explanation of the word below.`,
+    prompt_ko: `단어의 의미를 글자에 통합하여 그래픽과 글자를 교묘하게 혼합하세요.\n단어: {beautify}\n아래에 단어에 대한 간략한 설명을 추가하세요.`
   },
   {
-    id: 95,
-    title: '셀카로 버블헤드 만들기',
+    id: 195,
+    title: '패턴 생성기',
     category: '창의적 도구',
-    author: '@thisdudelikesAI',
-    sourceUrl: 'https://x.com/thisdudelikesAI/status/1920433372243136730',
-    inputImages: ['/images/cases/95/input.png'],
-    outputImage: '/images/cases/95/selfie-to-bobblehead-generator.png',
-    prompt: 'Turn this photo into a bobblehead: enlarge the head slightly, keep the face accurate and cartoonify the body. Place it on a bookshelf.',
-    prompt_ko: '이 사진을 버블헤드로 만들어주세요: 머리를 약간 크게 하고, 얼굴은 정확하게 유지하며 몸은 만화처럼 만들어주세요. 책장에 놓아주세요.'
+    author: 'Gemini',
+    sourceUrl: '#',
+    inputImages: ['https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/creative_tools/input_1.png'],
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/creative_tools/output_1.png',
+    prompt: 'Generate a seamless pattern based on this doodle.',
+    prompt_ko: '이 낙서를 기반으로 끊김 없는 패턴을 생성해줘.',
   },
+  {
+    id: 196,
+    title: '컬러 팔레트 제안',
+    category: '창의적 도구',
+    author: 'Gemini',
+    sourceUrl: '#',
+    inputImages: ['https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/creative_tools/input_2.jpg'],
+    outputImage: 'https://raw.githubusercontent.com/jamez-bondos/awesome-gpt4o-images/main/cases/creative_tools/output_2.png',
+    prompt: 'Generate a color palette based on the mood of this image.',
+    prompt_ko: '이 이미지의 분위기를 바탕으로 컬러 팔레트를 생성해줘.',
+  }
 ];
