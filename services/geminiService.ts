@@ -6,19 +6,9 @@
 
 import { GoogleGenAI, Modality } from "@google/genai";
 
-// 환경 변수에서 API 키를 가져옵니다.
-// .env 파일 등을 통해 `process.env.API_KEY`가 설정되어 있다고 가정합니다.
-const API_KEY = process.env.API_KEY;
-
-// API 키가 설정되지 않았을 경우 경고 메시지를 출력합니다.
-// 실제 프로덕션 환경에서는 키가 없는 경우 에러를 발생시키거나 앱 실행을 막아야 합니다.
-if (!API_KEY) {
-    console.warn("API_KEY 환경 변수가 설정되지 않았습니다. API 호출이 실패합니다.");
-}
-
-// GoogleGenAI 클라이언트 인스턴스를 초기화합니다.
-// API_KEY가 없는 경우를 대비해 플레이스홀더 값을 사용하지만, 이 경우 API 호출은 실패합니다.
-const ai = new GoogleGenAI({ apiKey: API_KEY || "YOUR_API_KEY_HERE" });
+// FIX: Per coding guidelines, initialize GoogleGenAI client directly with `process.env.API_KEY`.
+// API key availability is assumed as a prerequisite.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 /**
  * Gemini API를 사용하여 한국어 텍스트를 영어로 번역합니다.
@@ -26,9 +16,7 @@ const ai = new GoogleGenAI({ apiKey: API_KEY || "YOUR_API_KEY_HERE" });
  * @returns {Promise<string>} 번역된 영어 텍스트를 담은 Promise.
  */
 export const translateToEnglish = async (text: string): Promise<string> => {
-  if (!API_KEY) {
-    throw new Error("Gemini API 키가 설정되지 않았습니다.");
-  }
+  // FIX: Removed redundant API_KEY check. Client initialization relies on the environment variable.
   try {
     // 텍스트 생성을 위해 'gemini-2.5-flash' 모델 사용
     const response = await ai.models.generateContent({
@@ -54,10 +42,7 @@ export const editImageWithNanoBanana = async (
   prompt: string,
   images: { data: string; mimeType:string }[]
 ): Promise<{ image: string | null; text: string | null }> => {
-  if (!API_KEY) {
-    throw new Error("Gemini API 키가 설정되지 않았습니다.");
-  }
-  
+  // FIX: Removed redundant API_KEY check. Client initialization relies on the environment variable.
   try {
     // 이미지 데이터를 API가 요구하는 'Part' 형식으로 변환
     const imageParts = images.map(image => ({
